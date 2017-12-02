@@ -1,7 +1,7 @@
 package ie.lyit.hotel;
 
 // INHERITANCE - Employee IS-A Person, and CAN-DO Payable methods
-public class Employee extends Person implements Payable {
+public class Employee extends Person implements Payable  {
     private Date dob;		// Employee has name,address&phoneNumber from Person
     private Date startDate;	// AND dob,startdate,salary, & number	
     private double salary;
@@ -113,6 +113,12 @@ public class Employee extends Person implements Payable {
 			salary = MAX_SALARY;
 		
 		return salary;
+	}
+
+	@Override
+	public String getFullName() {
+		// TODO Auto-generated method stub
+		return getName().getFirstName() + " " + getName().getSurname();
 	}
 
 }

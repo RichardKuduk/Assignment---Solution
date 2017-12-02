@@ -69,9 +69,12 @@ public class Name implements Serializable {
 	public String getFirstName(){
 	   return firstName;
 	}
+	
 	public String getSurname(){
 	   return surname;
 	}
+	
+	
 
 	// set methods
 	// ==> Called when setting part of an object, e.g. - 

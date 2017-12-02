@@ -1,9 +1,17 @@
 package ie.lyit.hotel;
 
-import java.util.ArrayList;
 
 public interface HandlerCustomerDAO
-{
-	public void writeRecords(ArrayList<Customer> customerList);
-	public ArrayList<Customer> readRecords();
+{// Richard Kuduk - L00120064
+	// abstratc methods that has to be implemented in the CustomerSerializer
+	public void add();
+	public Customer view();
+	public void edit();
+	public void list();
+	public void delete();
+	public void quit();
+	// Test method to see if error with be flagged (test method not implemented)
+	//public void test();
+
+
 }

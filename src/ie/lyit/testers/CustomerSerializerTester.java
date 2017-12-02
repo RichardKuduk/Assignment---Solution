@@ -14,7 +14,10 @@ public class CustomerSerializerTester
 		int choice;
 		// Creating object of the CustomerSerializer class
 		CustomerSerializer custList = new CustomerSerializer();
+		
+		
 		// Reads the record from the file
+		
 		//custList.readRecordsFromFile();
 		// Menu display measse as []
 		Object message []=

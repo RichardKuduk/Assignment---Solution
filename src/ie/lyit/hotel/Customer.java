@@ -225,4 +225,11 @@ public class Customer extends Person implements Serializable
 		nextNumber--;
 	}
 	
+	@Override
+	public String getFullName()
+	{
+		return getName().getFirstName() + " " + getName().getSurname();
+	}
+
+	
 }

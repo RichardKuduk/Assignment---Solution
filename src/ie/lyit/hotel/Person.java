@@ -60,7 +60,11 @@ public abstract class Person implements Serializable
 	public Name getName(){
 		return name;
 	}
-
+	
+	// Abstract method to be implemented in all sub classes for purpose
+	// of Null Pattern
+	public abstract String getFullName();
+	
 	public void setAddress(String addressIn){
 		address = addressIn;
 	}
